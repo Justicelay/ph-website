@@ -77,3 +77,17 @@ Message: ${message}`
 document
   .getElementById("whatsappForm")
   .addEventListener("submit", sendWhatsAppMessage);
+
+// Read More Button Script
+document.querySelector(".read-more-btn").addEventListener("click", function () {
+  const expandedText = document.querySelector(".expanded-text");
+  const btn = this;
+
+  if (expandedText.style.display === "none" || !expandedText.style.display) {
+    expandedText.style.display = "block";
+    btn.textContent = "Read Less";
+  } else {
+    expandedText.style.display = "none";
+    btn.textContent = "Read More";
+  }
+});
