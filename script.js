@@ -91,3 +91,31 @@ document.querySelector(".read-more-btn").addEventListener("click", function () {
     btn.textContent = "Read More";
   }
 });
+
+// Mobile Menu Toggle
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  menuToggle.classList.toggle("active");
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    menuToggle.classList.remove("active");
+  });
+});
+
+// Close mobile menu when scrolling
+let lastScrollTop = 0;
+window.addEventListener("scroll", () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    navLinks.classList.remove("active");
+    menuToggle.classList.remove("active");
+  }
+  lastScrollTop = scrollTop;
+});
