@@ -501,6 +501,81 @@ body {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
+/* About Section Styles */
+.about {
+  padding: 5rem 0;
+  background: linear-gradient(to right, #ffffff, #f8f9fa);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-text {
+  position: relative;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.about-text:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.preview-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.expanded-text {
+  display: none;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.expanded-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.read-more-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .clients-grid {
@@ -580,3 +655,4 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 }
+
