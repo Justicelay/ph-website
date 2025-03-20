@@ -122,22 +122,23 @@ body {
 
 .slide-content {
   width: 50%;
-  padding: 4rem;
+  padding: 2rem 4rem;
   background: var(--light-color);
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
+  padding-top: 10vh;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--primary-color);
-  line-height: 1.2;
-  margin-bottom: 1rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -623,15 +624,15 @@ body {
 
   .slide-content {
     width: 100%;
+    min-height: 60vh;
     padding: 2rem;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
   }
 
   .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   .contact-content,
@@ -685,13 +686,7 @@ body {
 
   .slide-content {
     width: 100%;
-    min-height: 60vh;
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 
   .hero-title {
@@ -742,17 +737,14 @@ body {
     margin-bottom: 1.5rem;
   }
 
-  .slide-image {
-    height: 35vh;
-  }
-
   .slide-content {
     min-height: 65vh;
-    padding: 1.5rem;
+    padding: 2rem;
+    padding-bottom: 8vh;
   }
 
   .hero-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .about-text {
